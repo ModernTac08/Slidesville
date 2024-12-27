@@ -3,20 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slidesville</title>
-    <!-- Custom CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Slidesville</title>
+    <link rel="icon" href="images/Logo with Blank Background.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Logo and Message Section -->
-<section class="construction-page">
-    <div class="content-container">
-        <img src="images/Logo with Blank Background.png" alt="Ashley Andrews Events Logo" class="logo-image">
-        <h1 class="construction-message">We're currently under construction!</h1>
-        <p class="construction-subtext">Stay tuned for something amazing. We'll be launching soon.</p>
+    <header>
+        <img src="images/Logo with Blank Background.png" alt="Business Logo" class="logo">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Inflatables</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="hero">
+        <h2>Your one-stop shop for inflatable rentals!</h2>
+        <p>Explore our wide range of products and make your event unforgettable.</p>
     </div>
-</section>
 
+    <!-- Inflatable Carousel Section -->
+<div class="inflatables-carousel-container">
+    <h2>Our Featured Inflatables</h2>
+    <div class="inflatables-carousel">
+        <div class="inflatable-item">
+            <a href="/Products/obstacle.html">
+                <img src="images/40 Foot Obstacle Course.jpg" alt="Obstacle">
+                <p><strong>Our 40-Foot Obstacle Course!</strong></p>
+            </a>
+        </div>
+        <div class="inflatable-item">
+            <a href="/Products/octalous.html">
+                <img src="images/17' Octalous.jpg" alt="Octalous">
+                <p> <strong>Octalous, Our 17 Foot Tall Water Slide! </strong></p>
+            </a>
+        </div>
+        <div class="inflatable-item">
+            <a href="/Products/oasis.html">
+                <img src="images/Tropical Oasis.jpg" alt="Tropical Oasis">
+                <p><strong>Tropical Oasis, a Bounce and Slide Combo!</strong></p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- See All Inflatables Button -->
+    <div class="button-container">
+        <a href="products.html" class="button">See All of Our Inflatables and Prices</a>
+    </div>
+
+    <div class="about">
+        <h2>About Us</h2>
+        <p>Slidesville is a family-owned inflatable rental business committed to making your events fun and memorable. We take pride in offering high-quality inflatables at affordable prices. With years of experience in the industry, our team ensures reliable service and a hassle-free experience.</p>
+        <p>Whether you need a bouncy castle, giant slides, or unique inflatables for special occasions, we’ve got you covered!</p>
+    </div>
+
+    <div class="reviews-container">
+        <h2>Reviews</h2>
+        <div class="reviews-carousel">
+            <div class="review">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdylan.ward.90857%2Fposts%2Fpfbid02YUGuM69wjvSE1bapQrACnCwtLTaJoAGffcoshjiCtQpVi5zkuLtzbS3ZuKVbvWRrl&width=500&show_text=true&height=300&appId" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+            </div>
+            <div class="review">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flindsey.johnson.77398%2Fposts%2Fpfbid028tkFJX1AXwqevVymPb3Ud476wGirnHt9CNSseiFkWXqxLaMLMxay6WmSmzKFjv4Fl&show_text=true&width=500&height=300" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+            </div>
+        </div>
+        <button class="carousel-prev reviews-prev">‹</button>
+        <button class="carousel-next reviews-next">›</button>
+    </div>
+    
+    
+
+
+    <div class="button-container">
+        <a href="https://www.facebook.com/profile.php?id=61567441738655&sk=reviews" class="button" target="_blank">Leave us a Review!</a>
+    </div>
+    
+
+
+    <footer>
+        <p>&copy; 2025 Slidesville. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const reviewsCarousel = document.querySelector('.reviews-carousel');
+            const reviewsPrev = document.querySelector('.reviews-prev');
+            const reviewsNext = document.querySelector('.reviews-next');
+    
+            // Scroll to the left
+            reviewsPrev.addEventListener('click', function () {
+                reviewsCarousel.scrollBy({
+                    left: -reviewsCarousel.offsetWidth,
+                    behavior: 'smooth',
+                });
+            });
+    
+            // Scroll to the right
+            reviewsNext.addEventListener('click', function () {
+                reviewsCarousel.scrollBy({
+                    left: reviewsCarousel.offsetWidth,
+                    behavior: 'smooth',
+                });
+            });
+        });
+    </script>
+    
+    
+    
 </body>
 </html>

@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.bold-paragraph {
+    font-weight: bold;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.logo {
+    height: 100px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+
+
+
+/* This is for Mobile View */
+
+.page-description {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin: 20px; /* Center the image by default */
+    display: block;
+}
+
+.page-img img{
+    width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image by default */
+    float: none;
+}
+
+.page-description h3 {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px;
+    margin: 0 auto; /* Center the image by default */
+    display: block;
+}
+
+.bigtop-page-img img{
+    max-width: 90%;
+    position: relative;
+    float: left;
+    margin-left: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .page-img {
+        position: relative;
+        float: left;
+        margin-left: 20px; 
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+
+    .page-description h3 {
+        position: relative;
+        margin-right: 27%;
+        margin-left: 20px; 
+        margin-top: 30px; 
+        margin-bottom: 50px;
+        
+    }
+
+    .page-description p {
+        position: relative;
+        
+        margin-left: 550px; 
+        margin-top: 10px; 
+        margin-bottom: 20px;
+        
+    }
+
+    .bigtop-page-img img{
+        max-width: 25%;
+        position: relative;
+        float: left;
+        margin-left: 20px; 
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+
+}
+
+
+.description::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Product Price */
+.product p {
+    margin: 10;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    margin-top: 20px;
+}
